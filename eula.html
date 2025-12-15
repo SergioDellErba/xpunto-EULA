@@ -13,34 +13,34 @@
             max-width: 800px; /* Limita a largura do conteúdo para melhor leitura em telas grandes */
             color: #333;
             background-color: #f9f9f9;
+            overflow-wrap: break-word; /* Garante que palavras longas quebrem e não causem rolagem horizontal */
         }
         h1 {
             font-size: 1.8em;
             color: #222;
             margin-bottom: 15px;
-            word-wrap: break-word;
+            text-align: center; /* Centraliza o título principal */
         }
         h2 {
             font-size: 1.4em;
             color: #222;
             margin-top: 25px;
             margin-bottom: 10px;
-            word-wrap: break-word;
         }
         h3 {
             font-size: 1.2em;
             color: #222;
             margin-top: 20px;
             margin-bottom: 8px;
-            word-wrap: break-word;
         }
         p, li {
-            font-size: 1em;
+            font-size: 1.05em; /* Ajustado para melhor legibilidade em telas maiores */
             margin-bottom: 10px;
-            word-wrap: break-word;
+            text-align: justify; /* Texto justificado */
         }
         ul {
             padding-left: 20px;
+            text-align: justify; /* Garante que itens de lista também sejam justificados */
         }
         strong {
             font-weight: bold;
@@ -74,7 +74,11 @@
                 font-size: 1em;
             }
             p, li {
-                font-size: 1.10em;
+                font-size: 1.10em; /* Mantido seu ajuste para telas muito pequenas */
+                text-align: justify; /* Texto justificado em telas muito pequenas */
+            }
+            h1 {
+                text-align: left; /* Título pode ficar alinhado à esquerda em telas muito pequenas para não quebrar */
             }
         }
     </style>
